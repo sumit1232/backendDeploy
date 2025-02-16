@@ -17,3 +17,8 @@ app.use(cors());
 // app.use('/todos', todoRoutes);
 
 app.listen(5000, () => console.log('Server running on port 5000'));
+
+// respond with "hello world" when a GET request is made to the homepage
+app.get('/', (req, res) => {
+    res.send('hello world')
+  })
